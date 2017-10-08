@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Maamme</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Esitys alkaa. -->
+
+    <section class="slide">
+      <h1>Maamme</h1>
+      <h2>(Vårt Land)</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Benutzung</h2>
+
+      <ol>
+        <li>
+          <h3>Finnland</h3>
+          <p>Finnlands Nationallied</p>
+        </li>
+        <li>
+          <h3>Estland</h3>
+          <p>Das estnische Nationallied "Mu isamaa" hat die gleiche Melodie.</p>
+        </li>
+        <li>
+          <h3>Liven.</h3>
+          <p>Ein kleines Folk in Letland.
+            Auch sie haben die gleiche melodie.Da heist es Min izämö.      </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Ursprung</h2>
+      <ol>
+        <li>
+          <h3>Fredrik Pacius (1809-1891)</h3>
+          <p>War ein deutsche Komponist aus Hamburg und Musiklehrer, der komponierte das Lied</p>
+        </li>
+        <li>
+          <h3>Johan Ludvig Runeberg (1804-1877)</h3>
+          <p>Finnlandschwedischer Schriftsteller, der  den schwedischen Text schrieb.</p>
+        </li>
+        <li>
+          <h3>Paavo Cajander</h3>
+          <p>Er schrieb den finnischen Text.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Der Text auf deutsch</h2>
+      <blockquote>
+        <p><cite>O Heimat, Finnland unser Land<br>
+          Kling laut, du teures Wort!<br>
+          Kein Land, so weit der Himmelsrand.<br>
+          Kein Land mit Berg und Tal und Strand<br>
+          Wird mehr geliebt als unser Nord,<br>
+          Hier unsrer Väter Hort.<br>
+          Einst ringt sich deine Blüte los<br>
+          Reif aus der Knospe Zwang.<br>
+          Ja, einst aus unsrer Liebe Schoß<br>
+          Geht auf dein Hoffen, licht und groß.<br>
+          Und unser Vaterlandsgesang<br>
+          Erschallt in höherm Klang.<br></cite></p>
+      </blockquote>
+    </section>
+
+    <section class="slide">
+      <h3>Maamme (gesungen auf finnisch und schwedisch)</h3>
+      <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/x31ZWU0-DV0?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+    </section>
+
+    <section class="slide">
+      <h3>Maamme presentiert von Tombstone</h3>
+      <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/vWP3qKYEuZo?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
